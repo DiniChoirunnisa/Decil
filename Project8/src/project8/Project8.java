@@ -34,11 +34,17 @@ public class Project8 {
     System.out.println ("Jadi nilainya adalah "+nilai);
     
 
-    //contoh ARRAY (contoh diatas dilanjutkan kebawah)
+    //contoh ARRAY
     System.out.println ("ARRAY");
     System.out.println ("Input nilai 3 buah");
     
-    int nilai_ar[]=new int [3];
+    //Deklarasi array1
+    //int nilai_ar[]=new int [10];
+    
+    //Deklarasi array2
+    //int nilai_ar[];
+    
+    int nilai_ar[]=new int [10];
          for (int i=0;i<3;i++)
     {
         System.out.print ("Masukkan nilai ke-"+i+ " : ");
@@ -46,6 +52,10 @@ public class Project8 {
     }
          
     System.out.print ("Jadi nilainya adalah ke-1 : " +nilai_ar[0]+ " ke-2 : " +nilai_ar[1]+"  ke-3 : " +nilai_ar[2]);
-    }
+    System.out.print ("Banyaknya data "+nilai_ar.length);
+    //length digunakan untuk menghitung banyak data dilihat dari slot pada array (jawabannya 10)
     
-}
+    }}    
+    
+    
+
