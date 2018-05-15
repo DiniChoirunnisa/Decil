@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author GeeksFarm
+ * @author GeeksFarm BSD
  */
 public class Project4 {
 
@@ -17,23 +17,20 @@ public class Project4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    int angka;
+        // TODO code application logic here
+        
+        int keliling,sisi ;
     
-    Scanner input= new Scanner (System.in);
+    Scanner persegi = new Scanner (System.in);
     
-    System.out.println ("program membedakan angka ganjil dan genap");
+    System.out.println(" Menghitung Keliling Persegi ") ;
+    System.out.println ("-----------------") ;
     
-    System.out.print("Masukkan bilangan : ");
-    angka=input.nextInt();
+    System.out.println("sisi : ");
+    sisi=persegi.nextInt();
     
-    if (angka%2==0)
-    {
-        System.out.print ("ini adalah bilangan genap");
-    }
-    else
-    {
-        System.out.print ("ini adalah bilangan ganjil");
-    }
+    keliling=(sisi*4);
+    System.out.print("Keliling persegi adalah"+keliling);
     }
     
-    }
+}
