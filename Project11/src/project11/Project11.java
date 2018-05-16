@@ -5,6 +5,8 @@
  */
 package project11;
 
+import java.util.Scanner;
+
 /**
  *
  * @author GeeksFarm
@@ -19,6 +21,31 @@ public class Project11 {
     int matriks_a[][]=new int[2][2];
     int matriks_b[][]=new int[2][2];
     
+    Scanner input_matriks=new Scanner(System.in);
+    
+    System.out.println("INPUT MATRIKS A");
+    for (int i=0;i<2;i++)
+    {
+        for (int j=0;j<2;j++)
+        {
+            System.out.print ("masukkan angka untuk matriks A"+"["+i+"] ["+j+"] :");
+            matriks_a[i][j]=input_matriks.nextInt();
+        }   
+    }
+    System.out.println ();
+    
+    System.out.println("INPUT MATRIKS B");
+    for (int i=0;i<2;i++)
+    {
+        for (int j=0;j<2;j++)
+        {
+            System.out.print ("masukkan angka untuk matriks B"+"["+i+"] ["+j+"] :");
+            matriks_b[i][j]=input_matriks.nextInt();
+        }
+    }
+    System.out.println ();
+    
+    /*
     matriks_a[0][0]=1;
     matriks_a[0][1]=2;
     matriks_a[1][0]=3;
@@ -28,7 +55,7 @@ public class Project11 {
     matriks_b[0][1]=6;
     matriks_b[1][0]=7;
     matriks_b[1][1]=8;
-    
+    */
     int hasil_penjumlahan[][]=new int[2][2];
     
     
@@ -67,7 +94,9 @@ public class Project11 {
         }
         System.out.println ("]");
     }
-        
+    
+    
+    
     System.out.println();
     System.out.println ("MATRIKS A + MATRIKS B");
     for (int i=0;i<2;i++)
